@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div id="bg"></div>
+    <div class="jk" id="j3"  style="background-color: paleturquoise;"></div>
+    <div class="jk" id="j1" style="background-color: pink;"></div>
+    <div class="jk" id="j2"  style="background-color: green;"></div>
+    <div class="jk" id="j4"  style="background-color: dodgerblue;"></div>
+    <div class="jk" id="j5"  style="background-color: skyblue;"></div>
+    <div class="jk" id="j6"  style="background-color: darkgoldenrod;"></div>
+    <div class="jk" id="j7" style="background-color: slateblue;"></div>
+    <div class="jk" id="j8"  style="background-color: chartreuse;"></div>
+    <div class="jk" id="j9"  style="background-color: lawngreen;"></div>
+    <div class="jk" id="j10" style="background-color: sandybrown;"></div>
+    <div class="jk" id="j11"  style="background-color: aqua;"></div>
+
+ 
+
+
+    <script>
+        $("#bg").css({"width":"80","height":"80","background-color":"gray","border-radius":"50%","display":"inline-block","position":"absolute","border":"1px solid gray"})
+        $(".jk").css({"width":"80","height":"80","display":"inline-block","border":"2px solid white","border-radius":"50%","position":"absolute"})
+        $(".jk").click(function(){
+
+                $(".jk").css({"position":"relative"})
+                $("#bg").css({"position":"relative"})
+
+            $("#bg").click(function(){
+
+                $(".jk").css({"position":"absolute"})
+                $("#bg").css({"position":"absolute"})
+                    })
+             })
+         $("#bg").click(function(){
+
+                $("body").css({"background-color":"gray"})
+                
+                    })
+         /****/
+        $("#j1").click(function(){
+
+                $("body").css({"background-color":"pink"})
+                
+                    })
+        $("#j2").click(function(){
+
+                $("body").css({"background-color":"green"})
+                
+                    })
+        $("#j3").click(function(){
+
+                $("body").css({"background-color":"paleturquoise"})
+                
+                    })
+        $("#j4").click(function(){
+
+                $("body").css({"background-color":"dodgerblue"})
+                
+                    })
+        $("#j5").click(function(){
+
+                $("body").css({"background-color":"skyblue"})
+                
+                    })
+        $("#j6").click(function(){
+
+                $("body").css({"background-color":"darkgoldenrod"})
+                
+                    })
+        $("#j7").click(function(){
+
+                $("body").css({"background-color":"lawngreen"})
+                
+                    })
+        $("#j8").click(function(){
+
+                $("body").css({"background-color":"chartreuse"})
+                
+                    })
+        $("#j9").click(function(){
+
+                $("body").css({"background-color":"dodgerblue"})
+                
+                    })
+        $("#j10").click(function(){
+
+                $("body").css({"background-color":"sandybrown"})
+                
+                    })
+        $("#j11").click(function(){
+
+                $("body").css({"background-color":"aqua"})
+                
+                    })
+        
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <div id="mydiv">div</div>
+    <p class="abc"></p>
+    <img src="xxxxxx.jpg" alt="">
+    <a href="http://www.baidu.com">baidu</a>
+    <script>
+
+       console.log( $("p").attr("class"))
+       $("a").attr("href","http://www.baidu.com")
+       
+    
+    
+    
+    
+    // $("img").click(function(){
+    //     $("img").css({"src":"zzzzz.jpg"})
+
+    // })
+    //attr("属性值")获取属性值
+    //attr("属性名","属性值")给属性赋值
+    
+    var ist = true;
+    $("img").click(function(){
+        $(this).attr('src',function(){
+       if(ist){
+           return 'zzzzz.jpg';
+       }else{
+           ist = true;
+           return 'xxxxxx.jpg';
+       }
+    })
+    })
+    
+    </script>
+    
+</body>
+</html>

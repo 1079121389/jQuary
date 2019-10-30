@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+        }
+      .red{
+        
+          background-color:red;
+      }
+      .blue{
+         
+          background-color:blue;
+      }
+  
+    
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <script>
+      $("div").click(function(){
+                              //第一个颜色与原本的class值相同的时候点击消失原理这个toggleClass会删除这个再点击再次出现
+                              //颜色不相同的时候可以实现颜色切换的效果
+          $(this).toggleClass('blue','red');
+      });
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+<body>
+    <input type="checkbox" name="" id="quan">all<br>
+    <input type="checkbox" name="ball"  >足球
+    <input type="checkbox" name="ball"  >篮球
+    <input type="checkbox" name="ball"  >排球
+    <script>
+    $("#quan").change(function(){
+        //如果选中ID叫quan的标签默认值是true的话
+        if($("#quan").prop("checked")){
+            //就选中所有name叫ball的标签把prop的返回值设置成true;
+            $("[name=ball]").prop("checked",false);
+        }else{
+            //否则再次选中所有name叫ball的标签把prop的返回值设置成false；
+            $("[name=ball]").prop("checked",true);
+        }
+    })
+    
+    
+    
+    </script>
+
+
+
+
+</body>
+
+</html>
